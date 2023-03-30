@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "img_blog": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/cover-template--2-.png",
+      "title": "How To Implement Bubble Sort Algorithm With JavaScript",
+      "author_title": "JOEL OLAWANLE",
+      "author_img": "https://www.freecodecamp.org/news/content/images/2022/06/1654890413623.jpg",
+      "_date": "Dec 4 (10 Days ago)","read_time":"4"
+    },
+    {
+      "id": 2,
+      "img_blog": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/maxresdefault.jpeg",
+      "title": "Use ChatGPT to Build a Low Code RegEx Generator",
+      "author_title": "Beau Carnes",
+      "author_img": "https://www.freecodecamp.org/news/content/images/2021/05/beau-carnes-gravatar.jpeg",
+      "_date": "jan 14 (20 Days ago)","read_time":"8"
+    },
+    {
+      "id": 3,
+      "img_blog": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/24.-json-stringify-null.png",
+      "title": "Why is the Second Argument in JSON.stringify() usually null?",
+      "author_title": "Dillion Megida",
+      "author_img": "https://www.freecodecamp.org/news/content/images/2022/03/deee.jpg",
+      "_date": "Feb 24 (30 Day ago)","read_time":"9"
+    },
+    {
+      "id": 4,
+      "img_blog": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/context-api-cover-main.jpg",
+      "title": "How to Use the React Context API in Your Projects",
+      "author_title": "Dickson Boateng",
+      "author_img": "https://www.freecodecamp.org/news/content/images/2022/11/dickson.jpg",
+      "_date": "Mar 28 (5 Days ago)","read_time":"5"
+    }
+  ]
