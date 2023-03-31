@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="px-40">
+    <div className="lg:px-40">
         <Header/>
         <Blog/>
     </div>
