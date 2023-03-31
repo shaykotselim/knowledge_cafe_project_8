@@ -14,17 +14,17 @@ const BlogSide = ({ sideblog, markblog }) => {
     }
 
     return (
-        <div className="">
+        <div >
             <div className="bg-gray-100 rounded text-center h-10 py-1 mb-4">
                 <h1 className="text-blue-700 text-lg font-medium">Spent Time On Read : {total} min </h1>
             </div>
 
-            <div className="bg-gray-100 px-2 py-1 rounded">
+            <div className="bg-gray-100 px-2 py-1 rounded mb-4">
                 <p className="text-lg font-medium px-2">Bookmark Blogs : {blogtotal}</p>
                 {markblog.map((title, id) => (
                     <div className="border bg-white shadow-lg rounded mt-2 ">
                         <div className=" text-lg font-medium px-2 py-4  ">
-                            <p className="  ">{title.title}</p>
+                            <p>{title.title}</p>
                         </div>
                     </div>
                 )
@@ -33,6 +33,8 @@ const BlogSide = ({ sideblog, markblog }) => {
 
                 }
             </div>
+
+            
         </div>
     );
 };
