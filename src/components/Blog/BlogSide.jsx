@@ -1,4 +1,5 @@
 import React from 'react';
+import Question from '../Question/Question';
 
 const BlogSide = ({ sideblog, markblog }) => {
     let total = 0;
@@ -34,7 +35,7 @@ const BlogSide = ({ sideblog, markblog }) => {
                 }
             </div>
 
-            
+             <Question/>
         </div>
     );
 };
