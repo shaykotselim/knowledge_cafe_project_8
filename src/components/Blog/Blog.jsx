@@ -24,7 +24,7 @@ const Blog = () => {
     }
 
     const handleBookMarked = (blog) => {
-        const exist = markblog.find(item => item.id === blog.id);
+        const exist = markblog.find(item => item.title === blog.title);
 
         if (!exist) {
             const newMarkblog = [...markblog, blog]
