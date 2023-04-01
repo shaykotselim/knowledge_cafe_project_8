@@ -31,11 +31,11 @@ export default function Example() {
     return (
         <Fragment>
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(1)}>
+                <AccordionHeader className="text-left px-2" onClick={() => handleOpen(1)}>
                     1. Props Vs state
                 </AccordionHeader>
-                <AccordionBody>
-                    <p className='underline'>Ans:</p>
+                <AccordionBody className="px-4">
+                    
                     <p>
                         Props:
                         <li>Props are read-only.</li>
@@ -50,10 +50,10 @@ export default function Example() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(2)}>
+                <AccordionHeader className="text-left px-2" onClick={() => handleOpen(2)}>
                     2. How does the work useState?
                 </AccordionHeader>
-                <AccordionBody>
+                <AccordionBody  className="px-4">
                     <p>
                         useState:
                         The React useState Hook allows us to track state in a function component.State generally refers to data or properties that need to be tracking in an application.
@@ -61,20 +61,20 @@ export default function Example() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(3)}>
+                <AccordionHeader className="text-left px-2" onClick={() => handleOpen(3)}>
                     3.Purpose of useEffect other than fetching data.
                 </AccordionHeader>
-                <AccordionBody>
+                <AccordionBody className="px-4">
                     <p>
                         The useEffect in react js allows you to perform side effects in your components. The react useEffect examples of side effects include retrieving data, direct DOM updates, and timers. The second argument is optional.
                     </p>
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(4)}>
+                <AccordionHeader className="text-left px-2" onClick={() => handleOpen(4)}>
                     4.How Does React work?
                 </AccordionHeader>
-                <AccordionBody>
+                <AccordionBody className="px-4">
                     <p>
                         React has some core features that make it stand out from other JavaScript libraries. The following sections will introduce you to these features and explain how they contribute to mobile and web application development.
                     </p>

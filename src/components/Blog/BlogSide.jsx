@@ -36,7 +36,7 @@ const BlogSide = ({ sideblog, markblog }) => {
             </div>
 
              {/* <Question/> */}
-            <QuestionV2/>
+            {/* <QuestionV2/> */}
         </div>
     );
 };

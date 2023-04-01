@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BlogMain from './BlogMain';
 import BlogSide from './BlogSide';
+import QuestionV2 from '../Question/QuestionV2'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,13 +16,15 @@ const Blog = () => {
             .then(data => setBlogs(data))
     }, [])
 
-    // react toast 
-    const notify = () => toast("Data already added");
+    
 
     const handleReadTime = (blog) => {
         const newSideblog = [...sideblog, blog]
         setSideblog(newSideblog)
     }
+
+    // react toast 
+    const notify = () => toast("Data already added");
 
     const handleBookMarked = (blog) => {
         const exist = markblog.find(item => item.title === blog.title);
@@ -47,7 +50,7 @@ const Blog = () => {
                         handleBookMarked={handleBookMarked}
                     />)
                 }
-
+                <QuestionV2/>
             </div>
             <div>
                 <BlogSide sideblog={sideblog}
@@ -55,6 +58,7 @@ const Blog = () => {
                 />
             </div>
             <ToastContainer />
+            
         </div>
     );
 };
