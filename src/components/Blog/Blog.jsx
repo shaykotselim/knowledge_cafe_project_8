@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import BlogMain from './BlogMain';
 import BlogSide from './BlogSide';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([])
@@ -13,15 +15,25 @@ const Blog = () => {
             .then(data => setBlogs(data))
     }, [])
 
+    // react toast 
+    const notify = () => toast("Data already added");
+
     const handleReadTime = (blog) => {
         const newSideblog = [...sideblog, blog]
         setSideblog(newSideblog)
     }
 
     const handleBookMarked = (blog) => {
-        console.log("blog", blog);
-        const newMarkblog = [...markblog, blog]
-        setMarkblog(newMarkblog)
+        const exist = markblog.find(item => item.id === blog.id);
+
+        if (!exist) {
+            const newMarkblog = [...markblog, blog]
+            setMarkblog(newMarkblog)
+        } else {
+            notify()
+            const newMarkblog = [...markblog, blog]
+            setMarkblog(newMarkblog)
+        }
     }
 
     return (
@@ -42,7 +54,7 @@ const Blog = () => {
                     markblog={markblog}
                 />
             </div>
-
+            <ToastContainer />
         </div>
     );
 };
