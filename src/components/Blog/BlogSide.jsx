@@ -1,6 +1,6 @@
 import React from 'react';
-import Question from '../Question/Question';
-
+// import Question from '../Question/Question';
+import QuestionV2 from "../Question/QuestionV2"
 const BlogSide = ({ sideblog, markblog }) => {
     let total = 0;
     let blogtotal = 0;
@@ -35,7 +35,8 @@ const BlogSide = ({ sideblog, markblog }) => {
                 }
             </div>
 
-             <Question/>
+             {/* <Question/> */}
+            <QuestionV2/>
         </div>
     );
 };

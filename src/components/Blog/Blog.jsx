@@ -34,6 +34,7 @@ const Blog = () => {
                         handleBookMarked={handleBookMarked}
                     />)
                 }
+                
             </div>
             <div>
                 <BlogSide sideblog={sideblog}

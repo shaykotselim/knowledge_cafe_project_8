@@ -1,5 +1,6 @@
 import React from 'react';
 import {FiBookmark } from 'react-icons/fi';
+// import QuestionV2 from '../Question/QuestionV2';
 const BlogMain = (props) => {
     const {img_blog, title, author_title, author_img, _date, read_time} =props.blog
     // console.log(props.blog.id)   
@@ -29,6 +30,8 @@ const BlogMain = (props) => {
                         <button onClick={()=>props.handleReadTime(props.blog)} className="mt-4 mb-8 underline text-blue-700">Mark as read</button>
                     </div>
             </div>
+
+                {/* <QuestionV2></QuestionV2> */}
         </div>
     );
 };
